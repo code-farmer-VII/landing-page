@@ -33,3 +33,28 @@
   top: -60px;
   left: 30%;
 }
+.card-1{
+  background: linear-gradient(45deg, #cffafe 20%, #e0f2fe 50%, #bae6fd 80%);
+  transition: all ease-in-out 1s;
+  cursor: pointer;
+
+}
+.card-1:hover{
+  transform: translateY(-20px) ;
+  
+  /* background: linear-gradient(45deg, #bae6fd 80%, #e0f2fe 50%, #cffafe 20%); */
+  background: linear-gradient(-45deg, #cffafe 20%, #e0f2fe 50%, #bae6fd 80%);
+
+
+}
+
+.about{
+  margin-top: 200px;
+  background: linear-gradient(-0deg,  rgb(133, 194, 222), white);
+}
+.container-contact{
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg,  rgb(133, 194, 222), white);
+
+}

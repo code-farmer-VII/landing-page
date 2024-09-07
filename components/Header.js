@@ -7,17 +7,19 @@ const Header=()=>{
     
     return(
         <div>
-            <div className="Header bg-black flex justify-between items-center">
+            <div className="Header bg-purple-700 flex justify-between items-center fixed right-0 left-0 z-30">
+                
                 <div className="logo  flex-1 py-3 pl-4 flex justify-between">
-                    <div className="text-white cursor-pointer text-5xl font-extrabold hover:text-orange-500 transition-all duration-500 ease-in-out">jesus</div>                
+                    <div className="text-white cursor-pointer text-5xl font-extrabold hover:text-orange-500 transition-all duration-500 ease-in-out">A_A</div>  
+                    <div className="align-middle pt-4 w-[50%] md:w-[60%] hidden md:flex md:pl-16"><input type="text" className="rounded-s-lg outline-none h-8 bg-slate-200 px-3 flex-1 w-[80%] hover:bg-white " placeholder="Search ..."/><button className="text-white w-[20%] h-8 outline-none border-white border rounded-e-lg bg-purple-600 hover:bg-purple-800">search</button></div>               
                     <div className="md:hidden pr-6"><button onClick={(prev)=>{setDisplay(prev=>!prev)}} className="cursor-pointer text-5xl text-white hover:font-extrabold hover:text-orange-500 transition-all duration-500 ease-in-out">=</button></div>                
-                </div>   
+                </div>  
                 <div className="hidden md:flex-1 md:flex space-x-10 justify-end pr-9 ">
-                    <a className="cursor-pointer text-white hover:font-extrabold hover:text-orange-500 transition-all duration-500 ease-in-out ">Home</a>
-                    <a className="cursor-pointer text-white hover:font-extrabold hover:text-orange-500 transition-all duration-500 ease-in-out">Save</a>
-                    <a className="cursor-pointer text-white hover:font-extrabold hover:text-orange-500 transition-all duration-500 ease-in-out">Happines</a>
-                    <a className="cursor-pointer text-white hover:font-extrabold hover:text-orange-500 transition-all duration-500 ease-in-out">Love</a>
-                    <a className="cursor-pointer text-white hover:font-extrabold hover:text-orange-500 transition-all duration-500 ease-in-out">Trust</a>
+                    <a className="cursor-pointer text-white font-extrabold hover:text-orange-500 transition-all duration-500 ease-in-out ">Home</a>
+                    <a className="cursor-pointer text-white font-extrabold hover:text-orange-500 transition-all duration-500 ease-in-out">Save</a>
+                    <a className="cursor-pointer text-white font-extrabold hover:text-orange-500 transition-all duration-500 ease-in-out">Happines</a>
+                    <a className="cursor-pointer text-white font-extrabold hover:text-orange-500 transition-all duration-500 ease-in-out">Love</a>
+                    <a className="cursor-pointer text-white font-extrabold hover:text-orange-500 transition-all duration-500 ease-in-out">Trust</a>
                 </div>      
             </div>
             <div>
