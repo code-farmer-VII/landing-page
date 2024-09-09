@@ -1,11 +1,13 @@
 import Image from "next/image"
 import All_blog_posts from "@/public/db"
 import Card from "./Card"
+import { useContext } from "react"
+import { BlogContext } from "@/context/BlogContext"
 
 const Cards =()=>{
     return(
 
-        <div className="flex flex-col">
+        <div id="blog" className="flex flex-col ">
             {/* <div className="row-1 flex flex-col md:flex-row gap-x-11 gap-y-28 justify-evenly items-center mt-40 px-12">
                 <div className="card-1 bg-red-400 flex-1 rounded-xl relative">
                 <div>
@@ -110,7 +112,7 @@ const Cards =()=>{
                 All_blog_posts.map((post,index)=>{
                     return(
                             index < 3 && (
-                                    <Card key={index} title={post.title} image={post.img} description={post.description}/> 
+                                    <Card key={index} title={post.title} image={post.img} description={post.description.slice(0,130)} id={post.id}/> 
                             )
                         )                    
                 })
@@ -121,7 +123,7 @@ const Cards =()=>{
                 All_blog_posts.map((post,index)=>{
                     return(
                         index > 3 && index < 6) && (
-                            <Card key={index} title={post.title} image={post.img} description={post.description}/>    
+                            <Card key={index} title={post.title} image={post.img} description={post.description.slice(0,130)} id={post.id}/>    
                     )
                                             
                 })

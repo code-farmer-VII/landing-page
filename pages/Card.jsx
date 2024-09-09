@@ -1,9 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
-const Card = ({title, description, image})=>{
+const Card = ({title, description, image,id})=>{
     return(
-        <div className="card-1 bg-red-400 flex-1 rounded-xl relative">
+
+              <div className="card-1 bg-red-400 flex-1 rounded-xl relative shadow-md border-t-2 border-e-2 border-purple-700 hover:border-b-2 hover:border-s-2 hover:border-t-0 hover:border-e-0 ">
         <div>
             <Image 
                 src={image} 
@@ -13,18 +15,20 @@ const Card = ({title, description, image})=>{
                 objectFit='cover'
                 className='absolute top-[-35%] rounded-[50%] hover:scale-y-105 transition-all ease-in-out cursor-pointer'
             />
-            <h1 className="text-center">{title}</h1>
+          <Link 
+           href={`/Detail/${id}`}>
+            <h1 className="text-center rounded-xl">{title}</h1>
             <p className="pt-20 pb-10 px-7 text-center">
-                {description}
+                {description} ....
             </p>
-
+            </Link>
             <div className="flex justify-center gap-4 ">
             <p className="pl-3 text-gray-500 border-spacing-3 border-gray-400 border-2 w-[20%] rounded-xl bg-white">#Tag1</p>
             <p className="pl-3 text-gray-500 border-spacing-3 border-gray-400 border-2 w-[20%] rounded-xl bg-white">#Tag2</p>
             <p className="pl-3 text-gray-500 border-spacing-3 border-gray-400 border-2 w-[20%] rounded-xl bg-white">#Tag3</p>
 
             </div>
-            <p className="text-right pr-3 pb-2 text-gray-600 hover:text-black cursor-pointer">Read more ...</p>
+            <p className="text-right pr-3 pb-2 text-gray-600 hover:text-black cursor-pointer"><Link href={`/Detail/${id}`}>Read more ...</Link></p>
         </div>
         </div>
     )

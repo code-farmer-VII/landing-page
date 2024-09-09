@@ -1,6 +1,7 @@
 "use client"
 import { useState } from "react";
 import SideBar from "./SideBar";
+import Link from "next/link";
 
 const Header=()=>{
     const [display, setDisplay] = useState(false)
@@ -15,11 +16,11 @@ const Header=()=>{
                     <div className="md:hidden pr-6"><button onClick={(prev)=>{setDisplay(prev=>!prev)}} className="cursor-pointer text-5xl text-white hover:font-extrabold hover:text-orange-500 transition-all duration-500 ease-in-out">=</button></div>                
                 </div>  
                 <div className="hidden md:flex-1 md:flex space-x-10 justify-end pr-9 ">
-                    <a className="cursor-pointer text-white font-extrabold hover:text-orange-500 transition-all duration-500 ease-in-out ">Home</a>
-                    <a className="cursor-pointer text-white font-extrabold hover:text-orange-500 transition-all duration-500 ease-in-out">Save</a>
-                    <a className="cursor-pointer text-white font-extrabold hover:text-orange-500 transition-all duration-500 ease-in-out">Happines</a>
-                    <a className="cursor-pointer text-white font-extrabold hover:text-orange-500 transition-all duration-500 ease-in-out">Love</a>
-                    <a className="cursor-pointer text-white font-extrabold hover:text-orange-500 transition-all duration-500 ease-in-out">Trust</a>
+                    <a className="cursor-pointer text-white font-extrabold hover:text-orange-500 transition-all duration-500 ease-in-out " href="#home">Home</a>
+                    <a className="cursor-pointer text-white font-extrabold hover:text-orange-500 transition-all duration-500 ease-in-out" href="#blog">Blog</a>
+                    <a className="cursor-pointer text-white font-extrabold hover:text-orange-500 transition-all duration-500 ease-in-out" href="#aboutUs">About Us</a>
+                    <a className="cursor-pointer text-white font-extrabold hover:text-orange-500 transition-all duration-500 ease-in-out" href="#ContactUs">Contact Us</a>
+                    <p className="cursor-pointer text-white font-extrabold hover:text-orange-500 transition-all duration-500 ease-in-out"><Link href={"/auth"}>login/signUp</Link></p>
                 </div>      
             </div>
             <div>

@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
 
 
@@ -10,9 +11,9 @@ export default function Contact() {
     })
     
   return (
-    <div className='container-contact h-full flex flex-col md:flex-row justify-between gap-6 align-middle items-center content-center justify-items-center'>
+    <div id='ContactUs' className='container-contact flex flex-col md:flex-row justify-between gap-6 align-middle items-center content-center justify-items-center pb-10 '>
         <div className='left flex-1 pl-6 content-center'>
-            <h1 className='text-5xl font-bold mb-6' >Contact Us</h1>
+            <h1 className='text-3xl font-bold mb-6 my-10' >Contact Us</h1>
             <p className='text-center text-gray-700  mb-10 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam illo ratione recusandae maiores, quasi, minima laborum iusto dolorem, expedita dolores cupiditate quidem eum vel quam perferendis omnis voluptatum. Consectetur, similique!</p>
             <p className='text-violet-700 mb-4 italic '>apostolicanswers@gmail.com </p>
             <p className='text-violet-700 mb-4 italic '>{date}</p>
@@ -52,8 +53,9 @@ export default function Contact() {
         </div>
 
         <div className='right flex-1 pl-10  md:pl-0'>
-            <div className='card p-6 bg-white flex-1 flex-col shadow-xl shadow-cyan-300 mx-10 rounded-lg w-[70%] '>
+            <div className='card p-6 bg-white flex-1 flex-col shadow-xl shadow-cyan-300 mx-10 rounded-lg w-[70%] relative'>
                 <h1 className='text-2xl font-bold pb-6 text-violet-600'>Get in Touch</h1>
+                <Image src={require("../public/images/flower-top-right.png")} width={100} height={100} className='absolute top-0 right-0 '/>
                 <p className='text-center font-medium italic text-gray-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <input type="text" className='border w-full mt-4 rounded py-2 px-2 outline-slate-200 placeholder:italic' placeholder='Full Name ...'/>
                 <input type="text" className='border w-full mt-4 rounded py-2 px-2 outline-slate-200 placeholder:italic ' placeholder='Phone ...'/>

@@ -19,13 +19,14 @@
 .right-side Image{
   border-radius: 50%;
 } */
-.right-side img{
+
+/* .right-side img{
   border-radius: 50%;
-}
-.right-side{
+} */
+/* .right-side{
   display: flex;
   flex-direction: column;
-}
+} */
 
 .card-img{
   border-radius: 50%;
@@ -37,24 +38,154 @@
   background: linear-gradient(45deg, #cffafe 20%, #e0f2fe 50%, #bae6fd 80%);
   transition: all ease-in-out 1s;
   cursor: pointer;
+  background-image: url("../public/images/flower-bottom-left.png");
+  background-repeat: no-repeat;
+  background-position:bottom 0 left 0;
+  background-size: 20%;
+  div h1{
+    color: rgb(168, 168, 168);
+    transition: all ease-in-out 1s;
 
+  }
+  
 }
 .card-1:hover{
   transform: translateY(-20px) ;
-  
   /* background: linear-gradient(45deg, #bae6fd 80%, #e0f2fe 50%, #cffafe 20%); */
-  background: linear-gradient(-45deg, #cffafe 20%, #e0f2fe 50%, #bae6fd 80%);
+  /* background: linear-gradient(-45deg, #cffafe 20%, #e0f2fe 50%, #bae6fd 80% ); */
+  background-image: url("../public/images/flower-bottom-left.png");
+  background-repeat: no-repeat;
+  background-size: 35%;
 
-
+  div h1{
+    scale: 1.5;
+    font-weight: 700;
+    color: black;
+  }
+   
 }
 
 .about{
-  margin-top: 200px;
   background: linear-gradient(-0deg,  rgb(133, 194, 222), white);
 }
 .container-contact{
-  width: 100vw;
-  height: 100vh;
   background: linear-gradient(180deg,  rgb(133, 194, 222), white);
 
+}
+
+.navBar{
+  z-index: 4;
+  padding: 10px 35px;    
+}
+
+.comment-box{
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+  border: black;
+  border-width: 4px;
+}
+.comment-border{
+  border-left-width: 2px;
+  padding: 4%;
+  padding-bottom:2px ;
+  border-bottom-width: 2px;
+  border-bottom-left-radius: 10px;
+
+}
+.comment-border{
+  position: relative;
+}
+.comment-auther{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 25px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: -20px;
+  color: black;
+}
+.comment-auther-1{
+  background-color: rgb(242, 155, 155);
+  color: black;
+}
+.comment-auther-2{
+  background-color: rgb(65, 239, 65);
+  color: black;
+}
+.comment-auther-3{
+  background-color: rgb(249, 74, 249);
+  color: black;
+}
+.comment-auther-4{
+  background-color: rgb(62, 190, 165);
+  color: black;
+}
+.comment-section{
+  padding-left: 20px;
+}
+.like{
+  padding-top: 16px;
+}
+.comment-area{
+  padding-bottom: 45px;
+}
+.message{
+  background-color: white;
+  border: black;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: black;
+  border-width: 4px;
+  z-index: 1;
+
+}
+.message form div{
+  padding: 5px;
+  display: flex;
+  width: 100%;
+}
+.message form{
+  position: relative;
+  z-index: 1;
+}
+.message form div textarea{
+    flex: 1 1 auto;
+    background-color: rgb(220, 219, 219);
+    justify-content: stretch;
+    border-radius: 10px;
+    padding: 10px;
+    border-color: rgb(235, 235, 235);
+    border-width: 2px;
+    padding: 4px;
+    height: 150px;
+    outline: none;
+    transition: ease-in-out 1.2s;
+}
+.message form div textarea:hover{
+  padding: 10px;
+    background-color: white;
+}
+.message form button{
+  height: 40px;
+  width: 40px;
+  border-color: rgb(235, 235, 235);
+  border-width: 2px;
+  border-left: none;
+  background-color: white;
+  p{
+    transition: ease-in-out all 1s;
+  }
+}
+.message form button p:hover{
+  scale: 1.4;
+  font-weight: 700;
+}
+.auth{
+  background-image: url("../public/images/flower-bottom-left.png");
+  background-repeat: no-repeat;
+  background-position:bottom 0 left 0;
 }
